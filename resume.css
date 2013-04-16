@@ -1,0 +1,138 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+.portrait {
+  background: url("portrait.jpg");
+  background-size: 480px 640px;
+  background-position: -165px -165px;
+  width: 90px;
+  height: 120px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.contact {
+  font-size: 14px;
+  font-family: inherit;
+  text-align: right;
+  position: absolute;
+  top: -1em;
+  right: 110px;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 120px;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+header h2 {
+  color: #444;
+  font-size: 24px;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+section {
+  padding-left: 150px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #aaa;
+}
+section h1 {
+  font-size: 24px;
+  line-height: 24px;
+  height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0px 0px -24px -150px;
+  width: 150px;
+}
+section p:first-of-type {
+  margin-top: 0;
+}
+section h2 {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+.profile p {
+  font-size: 18px;
+}
+.skills th,
+.skills td {
+  width: 50%;
+}
+.technical li {
+  font-size: 16px;
+  width: 32.5%;
+  display: inline-block;
+}
+.education h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  line-heigt: 20px;
+}
+.education h2:not(:first-of-type) {
+  border-top: 1px solid #aaa;
+  margin-top: 13px;
+  padding-top: 8px;
+}
+.education h2 .date {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 42px;
+  display: inline-block;
+  float: left;
+  padding-right: 20px;
+}
+.education h2 .univ,
+.education h2 .thesis {
+  font-size: 14px;
+  line-height: 18px;
+}
+.education h2 .thesis {
+  font-style: italic;
+}
+.strength li::before {
+  font-weight: bold;
+  width: 1em;
+  padding: 0px 3px;
+  content: "+";
+}
+.strength li.minus::before {
+  content: "−";
+}
+.pagebreak {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  page-break-before: always;
+}
+.experience h1,
+.experience h2 {
+  font-size: 18px;
+}
+.experience li::before {
+  content: "–";
+  padding: 0px 3px;
+}
+
