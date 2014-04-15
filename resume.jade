@@ -1,8 +1,9 @@
-!!! 5
+doctype html
 html
 	head
 		title Resume Arpad Borsos
-		include resume.css
+		style
+			include resume.css
 		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
 		meta(name="viewport", content="width=device-width")
 	body
@@ -84,17 +85,6 @@ html
 		h1.pagebreak Experience
 		section.experience
 			.employer
-				h1 2012 – 2013
-				h2 UBIMET GmbH – Software Developer
-				:markdown
-					* designed and implemented an internal dashboard to query and analyze
-					meteorological parameters which is invaluable to other team members
-					* designed and implemented a highly extensible form used to enter
-					data associated with geo-referenced features
-					* worked on weather-related web-sites in *JavaScript*, *PHP*, *Python*
-					and some *node.js* tools
-					* aquired strong experience working with GIS data and mapping tools
-			.employer
 				h1 2008 – present
 				h2 Mozilla – Volunteer
 				:markdown
@@ -112,6 +102,11 @@ html
 				h1 2002 – present
 				h2 Various free software projects – Volunteer
 				:markdown
+					* optimized [gtksourceview](https://bugzilla.gnome.org/show_bug.cgi?id=710973),
+					leading to a 4x speedup in certain cases
+					* regular speaker at the [ViennaJS](http://www.meetup.com/viennajs/) meetup
+					* member of the [component](https://github.com/component) team on github,
+					contributed to several components and related tools
 					* achieved a ~100% speedup inside the *node-mongodb-native* driver
 					* contributed extension support and extensions to the *node-openid*
 					library
@@ -121,6 +116,24 @@ html
 					* various contributions to free software projects, see
 					[github.com/Swatinem](https://github.com/Swatinem)
 					* several packages published on [npm](https://npmjs.org/~swatinem)
+			.employer
+				h1 2013 - 2014
+				h2 Ubergrape GmbH - Software Developer
+				:markdown
+					* optimized an AngularJS app for performance, achieving a 20x speedup
+					* Worked as primary frontend developer on
+					[chatgrape](https://chatgrape.com/)
+			.employer
+				h1 2012 – 2013
+				h2 UBIMET GmbH – Software Developer
+				:markdown
+					* designed and implemented an internal dashboard to query and analyze
+					meteorological parameters which is invaluable to other team members
+					* designed and implemented a highly extensible form used to enter
+					data associated with geo-referenced features
+					* worked on weather-related web-sites in *JavaScript*, *PHP*, *Python*
+					and some *node.js* tools
+					* aquired strong experience working with GIS data and mapping tools
 			.employer
 				h1 2012
 				h2 Masters Thesis
