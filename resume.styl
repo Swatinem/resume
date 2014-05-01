@@ -28,9 +28,8 @@ html, body
 	font-family inherit
 	text-align right
 	position absolute
-	top -1em
+	top 5px
 	right 110px
-	white-space pre
 	margin 0
 	padding 0
 
@@ -47,23 +46,32 @@ header
 		margin 0
 		font-style italic
 		font-weight 300
+	h3
+		margin 0
+		color dark
+		font-size 16px
+		font-style italic
+		font-weight 300
 
 section
 	padding-left left-space
 	padding-top 20px
 	margin-top 20px
 	border-top 1px solid shaded
-	h1
+	position relative
+	.left
 		font-size 24px
 		line-height 24px
 		height 24px
 		font-weight 300
 		font-style italic
-		margin 0px 0px -24px (- left-space)
+		position absolute
+		left 0
+		//margin -24px 0px 0px (- left-space)
 		width left-space
 	p:first-of-type
 		margin-top 0
-	h2
+	h1, h2
 		font-size 20px
 		font-weight 300
 		font-style normal
@@ -78,36 +86,48 @@ ul
 .profile p
 	font-size 18px
 .skills
-	th, td
+	dl
+		margin 0
+	dt, dd
 		width 50%
+		margin 0
+		margin-left 50%
+		padding 0
+		line-height 20px
+		&:first-of-type
+			margin-left 0
+	dd:first-of-type
+		margin-bottom -80px
+	dt
+		font-weight bold
+		text-align center
 .technical
 	li
 		font-size 16px
 		width 32.5%
 		display inline-block
-.education
-	h2
-		font-size 16px
-		font-weight normal
-		margin 0
-		line-heigt 20px
-		&:not(:first-of-type)
-			border-top 1px solid shaded
-			margin-top 13px
-			padding-top 8px
-		.date
-			font-size 20px
-			font-weight 300
-			font-style italic
-			line-height 42px
-			display inline-block
-			float left
-			padding-right 20px
-		.univ, .thesis
-			font-size 14px
-			line-height 18px
-		.thesis
-			font-style italic
+.edu
+	font-size 16px
+	font-weight normal
+	margin 0
+	line-heigt 20px
+	&:not(:first-of-type)
+		border-top 1px solid shaded
+		margin-top 13px
+		padding-top 8px
+	.date
+		font-size 20px
+		font-weight 300
+		font-style italic
+		line-height 42px
+		display inline-block
+		float left
+		padding-right 20px
+	.univ, .thesis
+		font-size 14px
+		line-height 18px
+	.thesis
+		font-style italic
 .strength
 	li
 		&::before
@@ -125,7 +145,7 @@ ul
 	page-break-before always
 
 .experience
-	h1, h2
+	h2, h3
 		font-size 18px
 	li::before
 		content "–"
@@ -133,3 +153,6 @@ ul
 
 .employer
 	page-break-inside avoid
+	margin-bottom 10px
+	.left
+		margin-top -24px
