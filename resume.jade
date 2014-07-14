@@ -4,7 +4,7 @@ html
 		title Resume Arpad Borsos
 		style
 			include resume.css
-		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width")
 	body
 		header
@@ -49,7 +49,7 @@ html
 				li MongoDB
 				li MySQL/PostgreSQL
 				li Linux
-				li component
+				li build systems
 				li git/mercurial
 				li make
 		section.education
@@ -87,6 +87,10 @@ html
 				h2 Mozilla – Volunteer
 				h3.left 2008 – present
 				:markdown
+					* implemented
+					[several](https://bugzilla.mozilla.org/show_bug.cgi?id=875002)
+					[ECMAScript 6 features](https://bugzilla.mozilla.org/show_bug.cgi?id=933276)
+					in SpiderMonkey
 					* co-developed and maintained the developer dashboard at
 					[tbpl.mozilla.org](https://tbpl.mozilla.org)
 					* *tbpl* is used every day by Mozilla developers and is mission-critical
@@ -101,11 +105,12 @@ html
 				h2 Various free software projects – Volunteer
 				h3.left 2002 – present
 				:markdown
-					* optimized [gtksourceview](https://bugzilla.gnome.org/show_bug.cgi?id=710973),
-					leading to a 4x speedup in certain cases
 					* regular speaker at the [ViennaJS](http://www.meetup.com/viennajs/) meetup
+					* member of the [normalize](https://github.com/normalize) team on github
 					* member of the [component](https://github.com/component) team on github,
 					contributed to several components and related tools
+					* optimized [gtksourceview](https://bugzilla.gnome.org/show_bug.cgi?id=710973),
+					leading to a 4x speedup in certain cases
 					* achieved a ~100% speedup inside the *node-mongodb-native* driver
 					* contributed extension support and extensions to the *node-openid*
 					library
@@ -153,11 +158,16 @@ html
 		h1.pagebreak Paid Work Experience
 		section.experience
 			.employer
+				h2 ViewAR GmbH – Senior Frontend Architect
+				h3.left 2014 – present
+				:markdown
+					* responsible for the user interface and platform integration
+			.employer
 				h2 Ubergrape GmbH - Senior Frontend Lead
 				h3.left 2013 - 2014
 				:markdown
 					* optimized an AngularJS app for performance, achieving a 20x speedup
-					* Worked as primary frontend developer on
+					* worked as primary frontend developer on
 					[chatgrape](https://chatgrape.com/)
 			.employer
 				h2 UBIMET GmbH – Software Developer
